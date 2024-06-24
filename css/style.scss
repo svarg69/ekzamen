@@ -4,7 +4,17 @@
     margin: 0 auto;
 }
 
-.header__container{
-    display: flex;
-
+.header{
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 11px 0;
+    }
 }
+.menu__list{
+    display: flex;
+    gap: 40px;
+    
+}
+

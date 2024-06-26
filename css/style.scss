@@ -11,10 +11,78 @@
         align-items: center;
         padding: 11px 0;
     }
+    &__nav{
+        display: flex;
+    }
 }
 .menu__list{
     display: flex;
     gap: 40px;
+    margin-right: 40px;
     
 }
 
+.phone{
+    background-image: url(../img/phone-call\ 1.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+}
+
+.wrapper{
+    display: flex;
+    
+    max-width: 1430px;
+    padding: 0 15px;
+    margin: 0 auto;
+    gap: 40px;
+    
+  
+
+}
+.banner{
+    margin-bottom: 40px;
+}
+.main{
+    border: 1px solid rebeccapurple;
+    background-color: aqua;
+    width: 75%;
+    height: 500px;
+}
+.aside{
+    border: 1px solid red;
+    background-color: aqua;
+    width: 25%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+.footer{
+    padding-top: 40px;
+    &__row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+// media
+@media (max-width: 1024px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .main{
+        width: 100%;
+    }
+    .aside{
+        width: 100%;
+
+    }
+}

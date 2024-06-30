@@ -1,98 +1,250 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__row">
-                <div class="header__logo">
-                    <img src="img/logo.svg" alt="logo">
-                </div>
-                <nav class="header__nav">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="" class="menu__link">Главная</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Поиск</a></li>
-
-                    </ul>
-                    <a href="tel:+798788787" class="phone">+7 (987) 887-87</a>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div class="banner">
-        
-    </div>
-
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="" class="menu__link menu__link--current">Главная</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Поиск</a></li>
     
-        <div class="container flex__container">
-            <main class="main">
-                <article class="big-article">
-                    <div class="upper">
-
-                    </div>
-                    <h2 class="big-article__title">
-                        Управление ИТ-активами – скучная рутина или творческая задача?
-                    </h2>
-                    <p class="big-article__desc">
-                        Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще. 
-                    </p>
-                </article>
-            </main>
-            <aside class="aside">
-                <div class="news">
-                    <h3 class="news__title">
-                        Популярные новости
-                    </h3>
-                    <div class="news__block">
-                        ITAM&SAMDay – самая настоящая удача!
-                    </div>
-                    <div class="news__block">
-                        Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...
-                    </div>
-                    <div class="news__block">
-                        Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?
-                    </div>
+                        </ul>
+                        <a href="tel:+798788787" class="phone">+7 (987) 887-87</a>
+                    </nav>
                 </div>
-                <div class="subscribe">
-                    <div class="subsribe__row">
-                        <h2 class="subsribe__title">
-                            Подписка на рассылку
-                        </h2>
-                        <form action="#" class="subsribe__form">
-                            <input type="email" required placeholder="Email@gmail.com" class="subsribe__input">
-                            <button class="btn" type="submit">Подписаться</button>
-                        </form>
-                    </div>
-                </div>
-            </aside>
-        </div>
-
-   
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__row">
-                <div class="footer__logo">
-                    <img src="img/logo.svg" alt="logo">
-                </div>
-                <nav class="footer__nav">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="" class="menu__link">Главная</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Поиск</a></li>
-                    </ul>
             </div>
+        </header>
+        <div class="banner">
+        
         </div>
-    </footer>
+        <main class="main">
+            <div class="container flex__container">
 
+                <section class="blog">
+                    <article class="post">
+                        <div class="post__upper">
+                            <a href="#" class="post__category">
+                                Категория 1
+                            </a>
+                            <time class="post__date">13 дек 2020</time>
+                        </div>
+                        <h2 class="post__title">
+                            Управление ИТ-активами – скучная рутина или творческая задача?
+                        </h2>
+                        <p class="post__desc">
+                            Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще. 
+                        </p>
+                    </article>
+                    <div class="blog__row">
+                        <article class="post">
+                            <div class="post__upper">
+                                <a href="#" class="post__category">
+                                    Категория 1
+                                </a>
+                                <time class="post__date">13 дек 2020</time>
+                            </div>
+                            <h2 class="post__title">
+                                Управление ИТ-активами – скучная рутина или творческая задача?
+                            </h2>
+                            <p class="post__desc">
+                                Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще. 
+                            </p>
+                        </article>
+                        <article class="post post--card">
+                            <div class="post__upper post__upper--card">
+                                <a href="#" class="post__category post__category--card">
+                                    Категория 1
+                                </a>
+                            </div>
+                            <h2 class="post__title post__title--card">
+                                ITAM&SAMDay – самая настоящая удача!
+                            </h2>
+                            <time class="post__date post__date--card">13 дек 2020</time>
+                        </article>
+                    </div>
+                    <div class="blog__row">
+                        <article class="post post--card">
+                            <div class="post__upper post__upper--card">
+                                <a href="#" class="post__category post__category--card">
+                                    Категория 1
+                                </a>
+                            </div>
+                            <h2 class="post__title post__title--card">
+                                ITAM&SAMDay – самая настоящая удача!
+                            </h2>
+                            <time class="post__date post__date--card">13 дек 2020</time>
+                        </article>
+                        <div class="blog__col">
+                            <article class="post">
+                                <div class="post__upper">
+                                    <a href="#" class="post__category">
+                                        Категория 1
+                                    </a>
+                                    <time class="post__date">13 дек 2020</time>
+                                </div>
+                                <h2 class="post__title">
+                                    Управление ИТ-активами – скучная рутина или творческая задача слово слово и еще длинное слово после чего ...
+                                </h2>
+                            </article>
+                            <article class="post">
+                                <div class="post__upper">
+                                    <a href="#" class="post__category">
+                                        Категория 1
+                                    </a>
+                                    <time class="post__date">13 дек 2020</time>
+                                </div>
+                                <h2 class="post__title">
+                                    ITAM&SAMDay – самая настоящая удача!
+                                </h2>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="blog__row">
+                        <article class="post">
+                            <div class="post__upper">
+                                <a href="#" class="post__category">
+                                    Категория 1
+                                </a>
+                                <time class="post__date">13 дек 2020</time>
+                            </div>
+                            <h2 class="post__title">
+                                Управление ИТ-активами – скучная рутина или творческая задача?
+                            </h2>
+                            <p class="post__desc">
+                                Размышляя об управлении ИТ-активами, я вспомнил один учебный пример. Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству. В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще. 
+                            </p>
+                        </article>
+                        <article class="post post--card">
+                            <div class="post__upper post__upper--card">
+                                <a href="#" class="post__category post__category--card">
+                                    Категория 1
+                                </a>
+                            </div>
+                            <h2 class="post__title post__title--card">
+                                ITAM&SAMDay – самая настоящая удача!
+                            </h2>
+                            <time class="post__date post__date--card">13 дек 2020</time>
+                        </article>
+                    </div>
+                    <div class="blog__row">
+                        <article class="post post--card">
+                            <div class="post__upper post__upper--card">
+                                <a href="#" class="post__category post__category--card">
+                                    Категория 1
+                                </a>
+                            </div>
+                            <h2 class="post__title post__title--card">
+                                ITAM&SAMDay – самая настоящая удача!
+                            </h2>
+                            <time class="post__date post__date--card">13 дек 2020</time>
+                        </article>
+                        <div class="blog__col">
+                            <article class="post">
+                                <div class="post__upper">
+                                    <a href="#" class="post__category">
+                                        Категория 1
+                                    </a>
+                                    <time class="post__date">13 дек 2020</time>
+                                </div>
+                                <h2 class="post__title">
+                                    Управление ИТ-активами – скучная рутина или творческая задача слово слово и еще длинное слово после чего ...
+                                </h2>
+                            </article>
+                            <article class="post">
+                                <div class="post__upper">
+                                    <a href="#" class="post__category">
+                                        Категория 1
+                                    </a>
+                                    <time class="post__date">13 дек 2020</time>
+                                </div>
+                                <h2 class="post__title">
+                                    ITAM&SAMDay – самая настоящая удача!
+                                </h2>
+                            </article>
+                        </div>
+                    </div>
+                    <ul class="pagination">
+                        <li class="pagination__item">
+                            <a class="pagination__link pagination__link--current">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">4</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <aside class="aside">
+                    <div class="news">
+                        <h3 class="news__title">
+                            Популярные новости
+                        </h3>
+                        <div class="news__block">
+                            <h4 class="block__title">ITAM&SAMDay – самая настоящая удача!</h4>
+                            <time class="post__date">13 дек 2020</time>
+                        </div>
+                        <div class="news__block">
+                            <h4 class="block__title">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</h4>
+                            <time class="post__date">13 дек 2020</time>
+                        </div>
+                        <div class="news__block">
+                            <h4 class="block__title">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</h4>
+                            <time class="post__date">13 дек 2020</time>
+                        </div>
+                    </div>
+                    <div class="subscribe">
+                        <div class="subscribe__row">
+                            <h2 class="subscribe__title">
+                                Подписка на рассылку
+                            </h2>
+                            <form action="#" class="subscribe__form">
+                                <input type="email" required placeholder="Email@gmail.com" class="subscribe__input">
+                                <button class="subscribe__btn" type="submit">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
+                    <nav class="footer__nav">
+                        <ul class="menu__list menu__list--footer">
+                            <li class="menu__item"><a href="" class="menu__link menu__link--current">Главная</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Поиск</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__copy">
+                        ООО “Организация” 2020. Все права защищены
+                    </div>    
+                </div>
+
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

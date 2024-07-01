@@ -16,7 +16,7 @@
                     </div>
                     <nav class="header__nav">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="" class="menu__link menu__link--current">Главная</a></li>
+                            <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
                             <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
                             <li class="menu__item"><a href="#" class="menu__link search-link">Поиск</a></li>
@@ -57,8 +57,8 @@
 
 
         </header>
-        <div class="banner">
-        
+        <div class="category-banner">
+            <h1 class="category-banner__title">Категория 1</h1>
         </div>
         <main class="main">
             <div class="container flex__container">
@@ -66,7 +66,7 @@
                 <section class="blog">
                     <article class="post">
                         <div class="post__upper">
-                            <a href="category.html" class="post__category">
+                            <a href="#" class="post__category">
                                 Категория 1
                             </a>
                             <time class="post__date">13 дек 2020</time>
@@ -284,14 +284,14 @@
                     </div>
                     <nav class="footer__nav">
                         <ul class="menu__list menu__list--footer">
-                            <li class="menu__item"><a href="" class="menu__link menu__link--current">Главная</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Главная</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
                             <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
                             <li class="menu__item"><a href="#" class="menu__link">Поиск</a></li>
                         </ul>
                     </nav>
                     <div class="footer__copy">
-                        ООО “Организация” 2020. Никита Сергеевич Лучший!
+                        ООО “Организация” 2020. Все права защищены
                     </div>    
                 </div>
 
@@ -299,7 +299,20 @@
         </footer>
     </div>
 
-    <script src="main.js"></script>
+    <script>
+
+		const searchLink = document.querySelector('.search-link');
+		const searchBlock = document.querySelector('.header-search');
+		const searchClose = document.querySelector('.header-search__close');
+		searchLink.addEventListener('click', () => {
+			searchBlock.style.display = 'block';
+		});
+
+		searchClose.addEventListener('click', () => {
+			searchBlock.style.display = 'none';
+		});
+
+	</script>
 
 </body>
 </html>

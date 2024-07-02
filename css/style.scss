@@ -29,6 +29,11 @@ body {
     &__nav{
         display: flex;
     }
+    &-search{
+        &__input::-webkit-search-cancel-button {
+            display: none;
+        }    
+    }
 }
 .menu__list{
     display: flex;
@@ -76,6 +81,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 40px;
+
 }
 .flex__container{
     display: flex;
@@ -134,8 +140,8 @@ body {
         z-index: 1;
         &:hover{
             background: rgba(93, 113, 221, 0.15);
-    
         }
+    
         &--card{
             border-radius: 8px;
             padding: 8px 16px;
@@ -143,11 +149,12 @@ body {
             height: 37px;
             color: #fff;
             background-color: #7d8de4;
+            &:hover{
+                background: rgba(93, 113, 221, 0.05);
+                color: #5D71DD;
+            }
         }
     }
-
-
-
     &__title {
         margin-bottom: 20px;
         font-weight: 500;
@@ -177,14 +184,15 @@ body {
             color: #2F2222;
             transition: .3s;
         }
-        &:before{
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-        }
+        // &:before{
+        //     content: "";
+        //     position: absolute;
+        //     left: 0;
+        //     right: 0;
+        //     top: 0;
+        //     bottom: 0;
+            
+        // }
     }
 
 
@@ -227,7 +235,11 @@ body {
         gap: 20px;
     }
     &:hover{
-        box-shadow: 10px -5px 10px 0px rgba(0, 0, 0, 0.5);
+        // box-shadow: 10px -5px 10px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 4px 8px 40px 0 rgba(8, 24, 111, 0.2);
+    }
+    &:focus-visible{
+        border: 1.50px solid #5d71dd;
     }
 }
 
@@ -324,6 +336,7 @@ body {
     }
     &__form{
         padding: 0 30px;
+
     }
     &__input{
         margin-bottom: 20px;
@@ -331,15 +344,23 @@ body {
         border-radius: 20px;
         background: #f5f5f5;
         padding-left: 30px;
+        padding-right: 30px;
         height: 50px;
         font-family: 'Futura PT',
             sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 23px;
-        color: rgba(47, 34, 34, 0.4);
+        color: #2F2222;
         border: none;
         display: block;
+        cursor: pointer;
+        &:focus{
+            border: 1.50px solid #5D71DD;
+        }
+        &::placeholder{
+            color: rgba(47, 34, 34, 0.6);
+        }
     }
     &__btn{
         width: 100%;
@@ -356,6 +377,9 @@ body {
         align-items: center;
         justify-content: center;
         gap: 10px;
+        &:hover{
+            background-color: #6C7DD8;
+        }
     }
 }
 
@@ -413,6 +437,12 @@ body {
 	border-radius: 8px;
 	font-size: 18px;
 	color:#5D71DD;
+    &:hover{
+        background: rgba(93, 113, 221, 0.15);
+    }
+    &:active{
+        background: rgba(93, 113, 221, 0.2);
+    }
 }
 
 .post-links__link--prev svg {
@@ -463,6 +493,7 @@ body {
 	display: inline-block;
 	margin-bottom: 20px;
 	font-weight: 400;
+    color: #5D71DD;
 }
 
 .address {
@@ -476,6 +507,9 @@ body {
 	background-image: url("../img/pin.svg");
 	background-position: left center;
 	background-repeat: no-repeat;
+    a{
+        color: #5D71DD;
+    }
 }
 
 .social {
@@ -495,21 +529,36 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 .social__link--fb {
-	background-image: url('../img/fb.svg');
+    fill:#5D71DD;
+	// background-image: url('../img/fb.svg');
+    &:hover{
+        fill: #6C7DD8;
+    }
 }
 
 .social__link--vk {
-	background-image: url('../img/vk.svg');
+    fill:#5D71DD;
+	// background-image: url('../img/vk.svg');
+    &:hover{
+        fill: #6C7DD8;
+    }
 }
 
 .social__link--insta {
-	background-image: url('../img/insta.svg');
+    fill:#5D71DD;
+	// background-image: url('../img/insta.svg');
+    &:hover{
+        fill: #6C7DD8;
+    }
 }
 
 .social__link--tw {
-	background-image: url('../img/tw.svg');
+    fill:#5D71DD;
+	// background-image: url('../img/tw.svg');
+    &:hover{
+        fill: #6C7DD8;
+    }
 }
 
 
@@ -520,15 +569,23 @@ body {
         border-radius: 20px;
         background: #f5f5f5;
         padding-left: 30px;
+        padding-right: 30px;
         height: 50px;
         font-family: 'Futura PT',
             sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 23px;
-        color: rgba(47, 34, 34, 0.4);
+        color: rgba(47, 34, 34, 1);
         border: none;
         display: block;
+        cursor: pointer;
+        &:focus{
+            border: 1.50px solid #5D71DD;
+        }
+        &::placeholder{
+            color: rgba(47, 34, 34, 0.4);
+        }
     }
     &__textarea{
         resize: none;
@@ -539,15 +596,24 @@ body {
         border-radius: 20px;
         background: #f5f5f5;
         padding-left: 30px;
+        padding-right: 30px;
         height: 50px;
         font-family: 'Futura PT',
             sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 23px;
-        color: rgba(47, 34, 34, 0.4);
+        color: rgba(47, 34, 34, 1);
         border: none;
         display: block;
+        outline: none;
+        cursor: pointer;
+        &:focus{
+            border: 1.50px solid #5D71DD;
+        }
+        &::placeholder{
+            color: rgba(47, 34, 34, 0.4);
+        }
     }
     &__btn{
         width: 100%;
@@ -563,6 +629,10 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 10px;
+        &:hover{
+            background-color: #6C7DD8;
+        }
     }
 }
 
@@ -602,15 +672,20 @@ body {
         border-radius: 20px;
         background: #f5f5f5;
         padding-left: 30px;
+        padding-right: 30px;
         height: 50px;
         font-family: 'Futura PT',
             sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 23px;
-        color: rgba(47, 34, 34, 0.4);
+        color: #2F2222;
         border: none;
         display: block;
+        cursor: pointer;
+        &::placeholder{
+            color: rgba(47, 34, 34, 0.4);
+        }
     }
     &__btn{
         width: 196px;
@@ -635,7 +710,7 @@ body {
 
 // media
 
-@media (max-width: 1100px){
+@media (max-width: 1024px){
     .flex__container{
         flex-direction: column;
     }
@@ -657,6 +732,136 @@ body {
     width: 33.33%;
     justify-content: space-between;
     border: none;
+    }
+    .banner{
+        background-image: url(../img/banner1024.jpg);
+    }
+    .subscribe{
+        
+        &__form{
+            display: flex;
+            padding-left: 148px;
+            width: 89%;
+            gap: 20px;
+        }
+        &__title{
+            text-align: left;
+            padding-left: 148px;
+        }
+        &__btn{
+            width: 36%;
+        }
+        &__input{
+            width: 61%;
+        }
+    }
+}
+@media (max-width: 320px){
+    .header{
+        &__nav{
+            gap: 15px;
+        }
+        &__row{
+            gap: 13px;
+        }
+        &__logo{
+            img{
+                padding: 4px 0 0 4px;
+            }
+        }
+    }
+    .phone{
+        background-position: left;
+        display: flex;
+        align-items: center;
+    }
+    .post{
+        padding: 30px;
+        &__title{
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &__desc{
+            padding-right: 39px;
+        }
+        &__category{
+            font-size: 14px;
+            padding: 8px 18px;
+            margin-bottom: 26px;
+        }
+        &--card{
+            min-height: auto;
+        }
+    }
+    .blog{
+        &__row{
+            gap: 30px;
+        }
+    }
+
+    .menu{
+        &__list{
+            gap: 0;
+            margin-right: 0;
+            flex-direction: column;
+            display: none;
+        }
+    }
+    .banner{
+        background-image: url(../img/banner320.jpg);
+    }
+    .blog{
+        &__row{
+            flex-direction: column;
+        }
+    }
+    .news{
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+        &__block {
+            width: 100%;
+        }
+    }
+    .pagination{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .aside{
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .subscribe{
+        &__row{
+            align-items: flex-start;
+        }
+        &__title{
+            padding-left: 32px;
+        } 
+        &__form{
+            padding-left: 33px;
+            flex-direction: column;
+            width: 100%;
+            gap: 0px;
+        }
+        &__input{
+            width: 100%;
+        }
+        &__btn{
+            width: 100%;
+        }
+    }
+    .footer{
+        &__nav{
+            display: none;
+        }
+        &__copy{
+            margin: 24px 0 20px 0;
+            text-align: center;
+        }
+        &__row{
+            gap: 10px;
+        }
     }
 }
 
